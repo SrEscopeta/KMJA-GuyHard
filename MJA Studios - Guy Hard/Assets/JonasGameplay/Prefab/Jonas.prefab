@@ -632,7 +632,7 @@ MonoBehaviour:
   crouchHeight: 0.8
   bellyOffset: 0
   spineFacingDirection: 0
-  footStepAudio: {fileID: 8300000, guid: 6ba032d8ab846494495e3dde6445d9e4, type: 3}
+  footStepAudio: {fileID: 0}
   audioSource: {fileID: 1111453611278296372}
   leftFoot: {fileID: 6122206099162218698}
   rightFoot: {fileID: 2118790766918100324}
@@ -1788,6 +1788,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   stopNaNPropagation: 1
+  finalBlitToCameraTarget: 1
   antialiasingMode: 2
   temporalAntialiasing:
     jitterSpread: 0.75
