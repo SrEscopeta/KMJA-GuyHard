@@ -1,0 +1,50 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 19.03.2019 15:26:08
+
+newmtl Material__2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\micas\OneDrive\Escritorio\Diseño de Videojuegos UEM\Asignaturas 2do año\Proyecto II\Obj y Texturas\Fregona\source\UVW_cubell.png
+	map_Kd C:\Users\micas\OneDrive\Escritorio\Diseño de Videojuegos UEM\Asignaturas 2do año\Proyecto II\Obj y Texturas\Fregona\source\UVW_cubell.png
+
+newmtl Material__3
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\micas\OneDrive\Escritorio\Diseño de Videojuegos UEM\Asignaturas 2do año\Proyecto II\Obj y Texturas\Fregona\source\uvw_muchador.png
+	map_Kd C:\Users\micas\OneDrive\Escritorio\Diseño de Videojuegos UEM\Asignaturas 2do año\Proyecto II\Obj y Texturas\Fregona\source\uvw_muchador.png
+
+newmtl wire_008061138
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.0314 0.2392 0.5412
+	Kd 0.0314 0.2392 0.5412
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_000000000
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0000 0.0000 0.0000
+	Ks 0.3500 0.3500 0.3500
