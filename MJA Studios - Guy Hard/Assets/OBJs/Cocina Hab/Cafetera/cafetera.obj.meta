@@ -29,6 +29,14 @@ ModelImporter:
     2100010: ViteMAnicoM
     2100012: ManigliaTop
     2100014: valvola_ValvolaM
+    2100016: AttaccoManico_mainMat
+    2100018: Coperchio_mainMat
+    2100020: Coppa_mainMat
+    2100022: Manico_mainMat
+    2100024: Moka5_mainMat
+    2100026: PernoCoperchio_mainMat
+    2100028: Pirolo_mainMat
+    2100030: valvola_Valvola_mainMat
     2300000: AttaccoManico_main
     2300002: Coperchio_main
     2300004: Coppa_main

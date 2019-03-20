@@ -57,6 +57,28 @@ ModelImporter:
     2100010: Rosca
     2100012: interruptor
     2100014: Protecao
+    2100016: polySurface20Mat
+    2100018: polySurface22Mat
+    2100020: polySurface23Mat
+    2100022: polySurface24Mat
+    2100024: polySurface25Mat
+    2100026: polySurface26Mat
+    2100028: polySurface27Mat
+    2100030: polySurface28Mat
+    2100032: polySurface29Mat
+    2100034: polySurface30Mat
+    2100036: polySurface31Mat
+    2100038: polySurface32Mat
+    2100040: polySurface33Mat
+    2100042: polySurface34Mat
+    2100044: polySurface35Mat
+    2100046: polySurface36Mat
+    2100048: polySurface37Mat
+    2100050: polySurface38Mat
+    2100052: polySurface39Mat
+    2100054: polySurface40Mat
+    2100056: polySurface41Mat
+    2100058: polySurface42Mat
     2300000: polySurface20
     2300002: polySurface22
     2300004: polySurface23

@@ -17,6 +17,10 @@ ModelImporter:
     2100002: wire_008061138
     2100004: wire_000000000
     2100006: Material__3
+    2100008: Box005Mat
+    2100010: Box006Mat
+    2100012: Box007Mat
+    2100014: Cylinder001Mat
     2300000: Box005
     2300002: Box006
     2300004: Box007

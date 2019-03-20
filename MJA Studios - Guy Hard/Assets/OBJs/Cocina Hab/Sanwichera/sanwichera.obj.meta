@@ -11,6 +11,8 @@ ModelImporter:
     400004: toster_UPPER_LOD_02_LOW
     2100000: lower
     2100002: Upper
+    2100004: toster_LOWER_LOD_02_LOWMat
+    2100006: toster_UPPER_LOD_02_LOWMat
     2300000: toster_LOWER_LOD_02_LOW
     2300002: toster_UPPER_LOD_02_LOW
     3300000: toster_LOWER_LOD_02_LOW
