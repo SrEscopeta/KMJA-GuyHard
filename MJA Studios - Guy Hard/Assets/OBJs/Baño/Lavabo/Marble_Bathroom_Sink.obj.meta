@@ -5,12 +5,30 @@ ModelImporter:
   fileIDToRecycleName:
     100000: default
     100002: //RootNode
+    100004: Encimera
+    100006: Madera
+    100008: Metal
     400000: default
     400002: //RootNode
+    400004: Encimera
+    400006: Madera
+    400008: Metal
     2100000: defaultMat
+    2100002: EncimeraMat
+    2100004: MaderaMat
+    2100006: MetalMat
     2300000: default
+    2300002: Encimera
+    2300004: Madera
+    2300006: Metal
     3300000: default
+    3300002: Encimera
+    3300004: Madera
+    3300006: Metal
     4300000: default
+    4300002: Encimera
+    4300004: Madera
+    4300006: Metal
   externalObjects: {}
   materials:
     importMaterials: 1
