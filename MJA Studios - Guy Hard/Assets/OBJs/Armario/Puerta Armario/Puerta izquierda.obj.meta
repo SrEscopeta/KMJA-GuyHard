@@ -1,34 +1,16 @@
 fileFormatVersion: 2
-guid: dbd590dbde9d3754b9d915ce80b8157e
+guid: 68110c22e8f574044b7b32306a98498b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Plane
-    100002: Plane_001_Plane_003
-    100004: Plane_002_Plane_004
-    100006: Plane_003_Plane_005
-    100008: //RootNode
-    400000: Plane
-    400002: Plane_001_Plane_003
-    400004: Plane_002_Plane_004
-    400006: Plane_003_Plane_005
-    400008: //RootNode
-    2100000: PlaneMat
-    2100002: Plane_001_Plane_003Mat
-    2100004: Plane_002_Plane_004Mat
-    2100006: Plane_003_Plane_005Mat
-    2300000: Plane
-    2300002: Plane_001_Plane_003
-    2300004: Plane_002_Plane_004
-    2300006: Plane_003_Plane_005
-    3300000: Plane
-    3300002: Plane_001_Plane_003
-    3300004: Plane_002_Plane_004
-    3300006: Plane_003_Plane_005
-    4300000: Plane
-    4300002: Plane_001_Plane_003
-    4300004: Plane_002_Plane_004
-    4300006: Plane_003_Plane_005
+    100000: door01_MDL_nar
+    100002: //RootNode
+    400000: door01_MDL_nar
+    400002: //RootNode
+    2100000: door01_MDL_narMat
+    2300000: door01_MDL_nar
+    3300000: door01_MDL_nar
+    4300000: door01_MDL_nar
   externalObjects: {}
   materials:
     importMaterials: 1
