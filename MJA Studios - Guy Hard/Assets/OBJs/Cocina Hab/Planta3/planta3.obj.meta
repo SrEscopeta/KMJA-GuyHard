@@ -11,6 +11,8 @@ ModelImporter:
     400004: PlantMain
     2100000: Leaf2
     2100002: plant
+    2100004: LeafMat
+    2100006: PlantMainMat
     2300000: Leaf
     2300002: PlantMain
     3300000: Leaf
