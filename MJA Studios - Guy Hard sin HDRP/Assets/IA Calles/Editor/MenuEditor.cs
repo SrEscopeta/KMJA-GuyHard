@@ -4,7 +4,7 @@ using UnityEditor.SceneManagement;
 
 public class MenuEditor : MonoBehaviour
 {
-    [MenuItem("UTS PRO/Create/New Scene", menuItem = "UTS PRO/Create/New Scene", priority = 100, validate = false)]
+    [MenuItem("StreePopulation/Create/New Scene", menuItem = "GuyHard/Create/New Scene", priority = 100, validate = false)]
     static void MakeScene()
     {
         if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
@@ -17,25 +17,25 @@ public class MenuEditor : MonoBehaviour
         g.name = g.name.Split('(')[0];
     }
 
-    [MenuItem("UTS PRO/Create/Vehicles")]
+    [MenuItem("StreePopulation/Create/Vehicles")]
     private static void CreateVehiclePath()
     {
         CreatePath(PathType.VehiclePath);
     }
 
-    [MenuItem("UTS PRO/Create/Bicycles\\Gyro")]
+    [MenuItem("StreePopulation/Create/Bicycles\\Gyro")]
     private static void CreateBcyclesGyroPath()
     {
         CreatePath(PathType.BcyclesGyroPath);
     }
 
-    [MenuItem("UTS PRO/Create/Population/Walking people")]
+    [MenuItem("StreePopulation/Create/Population/Walking people")]
     private static void CreateWalkingPeople()
     {
         CreatePath(PathType.PeoplePath);
     }
 
-    [MenuItem("UTS PRO/Create/Population/Audience")]
+    [MenuItem("StreePopulation/Create/Population/Audience")]
     private static void CreateAudience()
     {
         var populationSystemManager = GetPopulationSystemManager();
@@ -44,7 +44,7 @@ public class MenuEditor : MonoBehaviour
         populationSystemManager.isConcert = true;
     }
 
-    [MenuItem("UTS PRO/Create/Population/Talking people")]
+    [MenuItem("StreePopulation/Create/Population/Talking people")]
     private static void CreateTalkingPeople()
     {
         var populationSystemManager = GetPopulationSystemManager();
@@ -53,7 +53,7 @@ public class MenuEditor : MonoBehaviour
         populationSystemManager.isStreet = true;
     }
 
-    [MenuItem("UTS PRO/Create/Semaphore System/Standard crossroad")]
+    [MenuItem("StreePopulation/Create/Semaphore System/Standard crossroad")]
     private static void CreateStandardCrossroad()
     {
         var populationSystemManager = GetPopulationSystemManager();
@@ -63,7 +63,7 @@ public class MenuEditor : MonoBehaviour
         ActiveEditorTracker.sharedTracker.isLocked = true;
     }
 
-    [MenuItem("UTS PRO/Create/Semaphore System/T-shaped crossroad")]
+    [MenuItem("StreePopulation/Create/Semaphore System/T-shaped crossroad")]
     private static void CreateTshapedCrossroad()
     {
         var populationSystemManager = GetPopulationSystemManager();
