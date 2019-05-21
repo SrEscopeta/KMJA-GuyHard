@@ -14,18 +14,6 @@ public class HouseInteraction : MonoBehaviour
     private bool radioActive = false;
     private bool radioTriger = false;
     private bool aspasTrigger = false;
-    private bool hTrigger = false;// H luz
-    private bool sTrigget = false;// S luz
-    public bool LHabitacion;
-    public bool LSalon;
-
-    void Start()
-    {
-        LucesSalon = GameObject.Find("Salon");
-        lucesHabitacion = GameObject.Find("habitacion");
-        LHabitacion = true;
-        LSalon = true;
-    }
 
     private void OnTriggerStay(Collider other)
     {
@@ -49,39 +37,6 @@ public class HouseInteraction : MonoBehaviour
             }
         }
 
-        if (other.name == "interruptorHabitacion")
-        {
-            hTrigger = true;
-            if (LHabitacion == true && Input.GetKeyDown(KeyCode.E))
-            {
-                lucesHabitacion.SetActive(false);
-                LHabitacion = false;
-            }
-            if (LHabitacion == false && Input.GetKeyDown(KeyCode.E))
-            {
-                lucesHabitacion.SetActive(true);
-                LHabitacion = true;
-            }
-
-
-        }
-
-        if(other.name == "interruptorSalon")
-        {
-            sTrigget = true;
-            if (LSalon == true && Input.GetKeyDown(KeyCode.E))
-            {
-
-                LucesSalon.SetActive(false);
-                LSalon = false;
-                
-            }
-            if (LSalon == false && Input.GetKeyDown(KeyCode.E))
-            {
-                LucesSalon.SetActive(true);
-                LSalon = true;
-            }
-        }
 
     }
 
@@ -90,10 +45,8 @@ public class HouseInteraction : MonoBehaviour
       
         aspasTrigger = false;
         radioTriger = false;
-        LSalon = false;
-        hTrigger = false;
-        sTrigget = false;
-        //LHabitacion = false;
+
+       
     }
     private void Update()
     {
@@ -114,28 +67,9 @@ public class HouseInteraction : MonoBehaviour
             GUI.Box(new Rect(50, 80, 50, 25), "E");
             GUI.Box(new Rect(0, 50, 200, 25), "Encender Radio.");
         }
-        if (hTrigger)
-        {
-            GUI.Box(new Rect(50, 80, 50, 25), "E");
-            GUI.Box(new Rect(0, 50, 200, 25), "Apagar Luces.");
-        }
-        if(LHabitacion == false && hTrigger)
-        {
-            GUI.Box(new Rect(50, 80, 50, 25), "E");
-            GUI.Box(new Rect(0, 50, 200, 25), "Encender Luces.");
-        }
+ 
         
-        if (sTrigget)
-        {
-            GUI.Box(new Rect(50, 80, 50, 25), "E");
-            GUI.Box(new Rect(0, 50, 200, 25), "Apagar Luces.");
-            
-        }
-        if(LSalon == false && sTrigget)
-        {
-            GUI.Box(new Rect(50, 80, 50, 25), "E");
-            GUI.Box(new Rect(0, 50, 200, 25), "Encender Luces.");
-        }
+    
         
     }
 }

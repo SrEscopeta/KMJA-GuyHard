@@ -15,24 +15,25 @@ public class Puerta : MonoBehaviour {
 		text = GameObject.Find ("Epuerta");
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		pj = GameObject.FindGameObjectWithTag ("Player");
-		distance = Vector3.Distance (pj.transform.position, transform.position);
 
-		if (distance < 1.7) {
-			text.gameObject.GetComponent<Text> ().enabled = true;
-			if (Input.GetKey (KeyCode.E)) {
-				SceneManager.LoadScene (nombreScene);
-				pj.gameObject.GetComponent<NoDestroy> ().tpPosition = tpPosition;
-				pj.gameObject.GetComponent<NoDestroy> ().tpStart = true;
-			}
-	
-				
-		} else {
-			text.gameObject.GetComponent<Text> ().enabled = false;
-		}
+    // Update is called once per frame
+    void Update() {
+        pj = GameObject.FindGameObjectWithTag("Player");
+        distance = Vector3.Distance(pj.transform.position, transform.position);
+
+        if (distance < 1.7) {
+            text.gameObject.GetComponent<Text>().enabled = true;
+            if (Input.GetKey(KeyCode.E)) {
+                SceneManager.LoadScene(nombreScene);
+                pj.gameObject.GetComponent<NoDestroy>().tpPosition = tpPosition;
+                pj.gameObject.GetComponent<NoDestroy>().tpStart = true;
+            }
+
+
+        } else {
+            text.gameObject.GetComponent<Text>().enabled = false;
+        }
+    }
 	
 	}
-}
+
