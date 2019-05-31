@@ -3,11 +3,13 @@
 public class RealTimeReflection : MonoBehaviour
 {
     ReflectionProbe probe;
-    void Awake()
+
+    private void Awake()
     {
         probe = GetComponent<ReflectionProbe>();
     }
-    void Update()
+
+    private void Update()
     {
         probe.transform.position = new Vector3(
         Camera.main.transform.position.x,
