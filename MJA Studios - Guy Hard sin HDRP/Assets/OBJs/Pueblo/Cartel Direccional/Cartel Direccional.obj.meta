@@ -5,13 +5,41 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Cartel_Direccional
+    100004: g_Box001_Box001
+    100006: g_Box002_Box002
+    100008: g_Box003_Box003
     400000: //RootNode
     400002: Cartel_Direccional
+    400004: g_Box001_Box001
+    400006: g_Box002_Box002
+    400008: g_Box003_Box003
     2100000: Cartel_DireccionalMat
+    2100002: g_Box001_Box001Mat
+    2100004: g_Box002_Box002Mat
+    2100006: g_Box003_Box003Mat
     2300000: Cartel_Direccional
+    2300002: g_Box001_Box001
+    2300004: g_Box002_Box002
+    2300006: g_Box003_Box003
     3300000: Cartel_Direccional
+    3300002: g_Box001_Box001
+    3300004: g_Box002_Box002
+    3300006: g_Box003_Box003
     4300000: Cartel_Direccional
-  externalObjects: {}
+    4300002: g_Box001_Box001
+    4300004: g_Box002_Box002
+    4300006: g_Box003_Box003
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: g_Box001_Box001Mat
+    second: {fileID: 2100000, guid: ad7e0784851e3d34080168af4cf02fb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: g_Box002_Box002Mat
+    second: {fileID: 2100000, guid: b4ec943eb59e45b4d8e59d8ad23aa02d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
