@@ -22,7 +22,7 @@ public class AudioPlay : MonoBehaviour
            
     }
 
-    int count = 1;
+    int count = 0;
 
 
 
@@ -32,7 +32,7 @@ public class AudioPlay : MonoBehaviour
         {
             enter = true;
             // Play the sound only on the trigger
-            if (enter && count == 1)
+            if (enter && count <= 3)
             {
                 source.PlayOneShot(audio);
                 count -= 1;
@@ -47,7 +47,7 @@ public class AudioPlay : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             enter = false;
-            count = 1;
+            //count = 1;
         }
         Debug.Log("Exited");
     }

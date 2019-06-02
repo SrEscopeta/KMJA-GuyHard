@@ -7,13 +7,13 @@ public class HouseInteraction : MonoBehaviour
     [Header("Objetos Interactuables")]
     public GameObject Radio;
     public GameObject aspasVentilador;
-    public GameObject LucesSalon;
-    public GameObject lucesHabitacion;
+
 
 
     private bool radioActive = false;
     private bool radioTriger = false;
     private bool aspasTrigger = false;
+
 
     private void OnTriggerStay(Collider other)
     {
@@ -50,7 +50,10 @@ public class HouseInteraction : MonoBehaviour
     }
     private void Update()
     {
-        
+        Radio = GameObject.Find("Radio");
+        aspasVentilador = GameObject.Find("Ventilador");
+
+
     }
 
     void OnGUI()
