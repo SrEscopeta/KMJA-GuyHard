@@ -51,7 +51,7 @@ public class HouseInteraction : MonoBehaviour
     private void Update()
     {
         Radio = GameObject.Find("Radio");
-        aspasVentilador = GameObject.Find("Ventilador");
+        aspasVentilador = GameObject.Find("Aspas");
 
 
     }
