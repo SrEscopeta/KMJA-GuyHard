@@ -18,8 +18,9 @@ public class EnterCarTrigger : MonoBehaviour {
 	void Start () {
 		oldpitch = caraudio.pitchMultiplier;
 		caraudio.pitchMultiplier = 0.0f;
-	
-	}
+        Player = GameObject.FindGameObjectWithTag("Player");
+
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -87,4 +88,8 @@ public class EnterCarTrigger : MonoBehaviour {
 
 
 	}
+    private void Update()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player");
+    }
 }
