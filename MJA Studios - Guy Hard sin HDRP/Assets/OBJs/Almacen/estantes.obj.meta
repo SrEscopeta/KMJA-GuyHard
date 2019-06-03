@@ -1,16 +1,64 @@
 fileFormatVersion: 2
-guid: e98c6f53992d6a04fa304077a6a7377d
+guid: b1d35913e09760046a8aaf6559c32a64
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Box001
-    100002: //RootNode
-    400000: Box001
-    400002: //RootNode
-    2100000: Box001Mat
-    2300000: Box001
-    3300000: Box001
-    4300000: Box001
+    100000: //RootNode
+    100002: Mesh1
+    100004: Mesh2
+    100006: Mesh3
+    100008: Mesh4
+    100010: Mesh5
+    100012: Mesh6
+    100014: Mesh7
+    100016: Mesh8
+    100018: Mesh9
+    400000: //RootNode
+    400002: Mesh1
+    400004: Mesh2
+    400006: Mesh3
+    400008: Mesh4
+    400010: Mesh5
+    400012: Mesh6
+    400014: Mesh7
+    400016: Mesh8
+    400018: Mesh9
+    2100000: Mesh1Mat
+    2100002: Mesh2Mat
+    2100004: Mesh3Mat
+    2100006: Mesh4Mat
+    2100008: Mesh5Mat
+    2100010: Mesh6Mat
+    2100012: Mesh7Mat
+    2100014: Mesh8Mat
+    2100016: Mesh9Mat
+    2300000: Mesh1
+    2300002: Mesh2
+    2300004: Mesh3
+    2300006: Mesh4
+    2300008: Mesh5
+    2300010: Mesh6
+    2300012: Mesh7
+    2300014: Mesh8
+    2300016: Mesh9
+    3300000: Mesh1
+    3300002: Mesh2
+    3300004: Mesh3
+    3300006: Mesh4
+    3300008: Mesh5
+    3300010: Mesh6
+    3300012: Mesh7
+    3300014: Mesh8
+    3300016: Mesh9
+    4300000: Mesh1
+    4300002: Mesh2
+    4300004: Mesh3
+    4300006: Mesh4
+    4300008: Mesh5
+    4300010: Mesh6
+    4300012: Mesh7
+    4300014: Mesh8
+    4300016: Mesh9
   externalObjects: {}
   materials:
     importMaterials: 1
