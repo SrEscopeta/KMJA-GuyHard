@@ -34,7 +34,7 @@ public class interaccion : MonoBehaviour
 
             }
         }
-        Debug.Log("Entered");
+      
     }
     void OnTriggerExit(Collider other)
     {
@@ -44,7 +44,7 @@ public class interaccion : MonoBehaviour
             enter = false;
             count = 0;
         }
-        Debug.Log("Exited");
+       
     }
 
     private void Update()
