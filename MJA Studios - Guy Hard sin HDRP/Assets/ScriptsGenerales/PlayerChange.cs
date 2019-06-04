@@ -28,6 +28,8 @@ namespace CoverShooter
             Camera1 = GameObject.FindGameObjectWithTag("MainCamera");
             text = GameObject.Find("Change");
 
+            text.gameObject.GetComponent<Text>().enabled = false;
+
             count = 0;
         }
 

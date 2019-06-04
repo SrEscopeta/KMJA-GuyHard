@@ -7,17 +7,19 @@ public class NoDestroy : MonoBehaviour {
 	public bool tpStart = false;
 	public float tpCount;
 
-	public static NoDestroy nodestroy;
+	public /*static*/ NoDestroy nodestroy;
 	// Use this for initialization
 	void Awake (){
 		if (nodestroy == null) {
 			nodestroy = this;
 			DontDestroyOnLoad (this.gameObject.transform);
-		}else if (nodestroy != this){
-			Destroy (gameObject);
-		}
+        }
+        //else if (nodestroy != this)
+        //{
+        //    Destroy(gameObject);
+        //}
 
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {

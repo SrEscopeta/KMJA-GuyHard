@@ -9,8 +9,8 @@ public class EnterCarTrigger : MonoBehaviour {
 	public GameObject carcamera;
 	public Transform exitpoint;
 
-	public string enterkey = "f";
-	public string exitkey = "r";
+	public string enterkey = "e";
+	public string exitkey = "q";
 	private float oldpitch;
 	private bool canenter;
 	private bool incar;
@@ -34,6 +34,7 @@ public class EnterCarTrigger : MonoBehaviour {
 				carcamera.SetActive (true);
 				carusercontrol.enabled = true;
 				carcontroller.enabled = true;
+                caraudio.enabled = true;
 				caraudio.pitchMultiplier = oldpitch;
 				canenter = false;
 				incar = true;
@@ -54,7 +55,8 @@ public class EnterCarTrigger : MonoBehaviour {
 				carusercontrol.enabled = false;
 				carcontroller.enabled = false;
 				caraudio.pitchMultiplier = 0;
-				canenter = false;
+                caraudio.enabled = false;
+                canenter = false;
 				incar = false;
 				print ("exited");
 
