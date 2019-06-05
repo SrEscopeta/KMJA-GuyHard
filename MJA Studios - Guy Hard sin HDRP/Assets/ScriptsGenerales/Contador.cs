@@ -12,8 +12,11 @@ public class Contador : MonoBehaviour
 
     public GameObject EnemigosFinales;
     public GameObject ChangeYonqui;
-
+    public GameObject ChangeFinal;
     public GameObject cinematica;
+
+    public GameObject Audio1;
+    public GameObject Audio2;
 
 
     public bool Finales;
@@ -22,15 +25,31 @@ public class Contador : MonoBehaviour
     {
         EnemigosFinales = GameObject.FindGameObjectWithTag("Final");
         ChangeYonqui = GameObject.Find("changeYonki");
+        ChangeFinal = GameObject.Find("changeFinal"); 
+
         cinematica = GameObject.Find("Cinematica");
+
+        Audio1 = GameObject.Find("Audio1");
+        Audio2 = GameObject.Find("Audio2");
     }
     private void Start()
     {
+        ChangeYonqui = GameObject.Find("changeYonki");
+        ChangeFinal = GameObject.Find("changeFinal");
+
         casaAsquerosa = GameObject.FindGameObjectWithTag("Casa");
         EnemigosFinales = GameObject.FindGameObjectWithTag("Final");
         cinematica = GameObject.Find("Cinematica");
+
         EnemigosFinales.SetActive(false);
         cinematica.SetActive(false);
+
+        Audio1 = GameObject.Find("Audio1");
+        Audio2 = GameObject.Find("Audio2");
+
+        Audio1.SetActive(false);
+        Audio2.SetActive(false);
+
     }
     void OnTriggerEnter(Collider other)
     {
@@ -65,10 +84,19 @@ public class Contador : MonoBehaviour
             DestroyImmediate(casaAsquerosa);
         }
 
+        if(countPuerto == 2)
+        {
+            Audio2.SetActive(true);
+        }
+        if(countPuerto == 1)
+        {
+            Audio1.SetActive(true);
+        }
         if (countPuerto >= 3)
         {
             EnemigosFinales.SetActive(true);
             cinematica.SetActive(true);
+            ChangeFinal.SetActive(true);
             Destroy(ChangeYonqui);
 
             Finales = true;
