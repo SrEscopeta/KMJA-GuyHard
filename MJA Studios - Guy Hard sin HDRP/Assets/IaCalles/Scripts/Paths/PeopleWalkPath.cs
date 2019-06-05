@@ -8,6 +8,9 @@ public enum AnimationState
 
 public class PeopleWalkPath : WalkPath
 {
+    private Animator animator;
+    public bool CanRun;
+    private string RunNow = "RunNow";
     [Tooltip("Animation of the pedestrian at the start / Анимация пешехода при старте")] public AnimationState animationState = AnimationState.walk;
     [Range(0.0f, 5.0f)] [Tooltip("Offset from the line along the X axis / Смещение от линии по оси X")] public float randXPos = 0.1f;
     [Range(0.0f, 5.0f)] [Tooltip("Offset from the line along the Z axis / Смещение от линии по оси Z")] public float randZPos = 0.1f;
@@ -32,8 +35,29 @@ public class PeopleWalkPath : WalkPath
         if(_ignorePeople)
         {
             Physics.IgnoreLayerCollision(8, 8, true);  
-        }                 
-    }    
+
+        }
+        animator = GetComponent<Animator>();
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            CanRun = false;
+            animationState = AnimationState.idle1;
+            animator.SetBool(RunNow, CanRun);
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        animationState = AnimationState.run;
+        CanRun = true;
+        animator.SetBool(RunNow, CanRun);
+    }
 
     public override void CreateSpawnPoints()
     {

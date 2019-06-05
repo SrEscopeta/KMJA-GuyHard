@@ -8,6 +8,7 @@ public class EnterCarTrigger : MonoBehaviour
     public CarAudio caraudio;
     public GameObject Player;
     public GameObject carcamera;
+    public GameObject cameraPlayer;
     public Transform exitpoint;
 
     public string enterkey = "f";
@@ -21,6 +22,7 @@ public class EnterCarTrigger : MonoBehaviour
         oldpitch = caraudio.pitchMultiplier;
         caraudio.pitchMultiplier = 0.0f;
         Player = GameObject.FindGameObjectWithTag("Player");
+        //cameraPlayer = GameObject.Find("CamaraJonas");
 
     }
 
@@ -44,8 +46,6 @@ public class EnterCarTrigger : MonoBehaviour
                 canenter = false;
                 incar = true;
                 print("entered");
-
-
 
 
 
