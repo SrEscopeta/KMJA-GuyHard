@@ -41,6 +41,9 @@ public class Contador : MonoBehaviour
         EnemigosFinales = GameObject.FindGameObjectWithTag("Final");
         cinematica = GameObject.Find("Cinematica");
 
+        ChangeFinal.SetActive(false);
+        ChangeYonqui.SetActive(false);
+
         EnemigosFinales.SetActive(false);
         cinematica.SetActive(false);
 
@@ -84,6 +87,11 @@ public class Contador : MonoBehaviour
             DestroyImmediate(casaAsquerosa);
         }
 
+        if(countPuerto < 2)
+        {
+            ChangeYonqui.SetActive(true);
+            ChangeFinal.SetActive(false);
+        }
         if(countPuerto == 2)
         {
             Audio2.SetActive(true);
@@ -97,6 +105,7 @@ public class Contador : MonoBehaviour
             EnemigosFinales.SetActive(true);
             cinematica.SetActive(true);
             ChangeFinal.SetActive(true);
+
             Destroy(ChangeYonqui);
 
             Finales = true;
