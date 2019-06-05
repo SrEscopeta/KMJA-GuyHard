@@ -23,7 +23,11 @@ namespace CoverShooter
 
 
 
-
+        private void Awake()
+        {
+            player1 = GameObject.FindGameObjectWithTag("Player");
+            canvas1 = GameObject.Find("CanvasJonas");
+        }
         private void Start()
         {
             player2.SetActive(activePlayer2);
@@ -35,6 +39,9 @@ namespace CoverShooter
             //Camera2.enabled = false;
             Camera1 = GameObject.FindGameObjectWithTag("MainCamera");
             text = GameObject.Find("Change");
+
+            player1 = GameObject.FindGameObjectWithTag("Player");
+            canvas1 = GameObject.Find("CanvasJonas");
 
             text.gameObject.GetComponent<Text>().enabled = false;
 
