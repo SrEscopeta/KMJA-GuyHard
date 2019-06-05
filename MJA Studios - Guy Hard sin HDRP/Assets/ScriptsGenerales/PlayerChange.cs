@@ -41,6 +41,10 @@ namespace CoverShooter
             count = 0;
         }
 
+        private void Update()
+        {
+            text = GameObject.Find("Change");
+        }
 
         int count;
         private void OnTriggerStay(Collider other)
