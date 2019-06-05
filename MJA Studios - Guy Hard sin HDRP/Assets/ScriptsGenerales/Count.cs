@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Count : MonoBehaviour
 {
-    int countCasa = 0;
-    int countPuerto = 0;
-    int countComisaria = 0;
-    int countMcRonald = 0;
+    public int countCasa = 0;
+    public int countPuerto = 0;
+    public int countComisaria = 0;
+    public int countMcRonald = 0;
 
+    public GameObject casaAsquerosa;
+
+    private void Start()
+    {
+        casaAsquerosa = GameObject.FindGameObjectWithTag("Casa");
+    }
     private void OnTriggerStay(Collider other)
     {
         if(other.gameObject.tag == "casa")
@@ -33,9 +39,13 @@ public class Count : MonoBehaviour
 
     }
 
-    private void OnTriggerExit(Collider other)
+    private void Update()
     {
-        
+        if (countCasa > 1)
+        {
+
+            DestroyImmediate(casaAsquerosa);
+        }
     }
 
 }
