@@ -114,6 +114,10 @@ public class Contador : MonoBehaviour
         {
             return;
         }
+        if(Audio1 || Audio2 == null)
+        {
+            return;
+        }
 
     }
 
