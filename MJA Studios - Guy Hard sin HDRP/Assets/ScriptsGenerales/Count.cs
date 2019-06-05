@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Count : MonoBehaviour
 {
-    public int countCasa = 0;
+    public int countCasa = -1;
     public int countPuerto = 0;
     public int countComisaria = 0;
     public int countMcRonald = 0;
@@ -19,7 +19,7 @@ public class Count : MonoBehaviour
     {
         if(other.gameObject.tag == "Casa")
         {
-            countCasa =+ 1;
+            countCasa = countCasa + 1;
         }
 
         if(other.gameObject.tag == "Puerto")
@@ -41,7 +41,7 @@ public class Count : MonoBehaviour
 
     private void Update()
     {
-        if (countCasa > 1)
+        if (countCasa >= 2)
         {
 
             DestroyImmediate(casaAsquerosa);
