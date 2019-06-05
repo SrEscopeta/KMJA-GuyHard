@@ -17,7 +17,7 @@ public class Count : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.tag == "casa")
+        if(other.gameObject.tag == "Casa")
         {
             countCasa =+ 1;
         }
