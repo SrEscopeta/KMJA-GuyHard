@@ -104,14 +104,16 @@ public class Contador : MonoBehaviour
             ChangeFinal.SetActive(false);
             EnemigosFinales.SetActive(false);
         }
-        if(countPuerto >= 2)
+        if (countPuerto >= 2)
         {
             Audio2.SetActive(true);
         }
-        if(countPuerto >= 1)
+        else { Audio2.SetActive(true); }
+        if (countPuerto >= 1)
         {
             Audio1.SetActive(true);
         }
+        else { Audio1.SetActive(true); }
         if (countPuerto >= 3)
         {
             EnemigosFinales.SetActive(true);
