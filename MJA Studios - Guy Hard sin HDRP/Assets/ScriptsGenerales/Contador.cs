@@ -23,6 +23,8 @@ public class Contador : MonoBehaviour
 
     private void Awake()
     {
+        casaAsquerosa = GameObject.FindGameObjectWithTag("Casa");
+
         EnemigosFinales = GameObject.FindGameObjectWithTag("Final");
         ChangeYonqui = GameObject.Find("changeYonki");
         ChangeFinal = GameObject.Find("changeFinal"); 
@@ -81,7 +83,8 @@ public class Contador : MonoBehaviour
 
     private void Update()
     {
-       
+        casaAsquerosa = GameObject.FindGameObjectWithTag("Casa");
+
         if (countCasa >= 2)
         {
             DestroyImmediate(casaAsquerosa);
