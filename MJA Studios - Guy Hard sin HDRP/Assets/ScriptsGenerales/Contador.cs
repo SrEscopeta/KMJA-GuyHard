@@ -111,7 +111,7 @@ public class Contador : MonoBehaviour
         {
             Audio1.SetActive(true);
         }
-        if (countPuerto == 3)
+        if (countPuerto >= 3)
         {
             EnemigosFinales.SetActive(true);
             cinematica.SetActive(true);
@@ -125,6 +125,8 @@ public class Contador : MonoBehaviour
         else
         {
             EnemigosFinales.SetActive(false);
+            //cinematica.SetActive(false);
+            //ChangeFinal.SetActive(false);
 
             Finales = false;
 
