@@ -102,12 +102,13 @@ public class Contador : MonoBehaviour
         {
             ChangeYonqui.SetActive(true);
             ChangeFinal.SetActive(false);
+            EnemigosFinales.SetActive(false);
         }
-        if(countPuerto == 2)
+        if(countPuerto >= 2)
         {
             Audio2.SetActive(true);
         }
-        if(countPuerto == 1)
+        if(countPuerto >= 1)
         {
             Audio1.SetActive(true);
         }
@@ -125,8 +126,8 @@ public class Contador : MonoBehaviour
         else
         {
             EnemigosFinales.SetActive(false);
-            //cinematica.SetActive(false);
-            //ChangeFinal.SetActive(false);
+            cinematica.SetActive(false);
+            ChangeFinal.SetActive(false);
 
             Finales = false;
 
