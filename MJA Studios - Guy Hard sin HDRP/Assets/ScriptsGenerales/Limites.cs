@@ -20,6 +20,13 @@ public class Limites : MonoBehaviour
             limites.SetActive(true);
         }
     }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player" || other.gameObject.tag == "Car")
+        {
+            limites.SetActive(true);
+        }
+    }
     private void OnTriggerExit(Collider other)
     {
         limites.SetActive(false);

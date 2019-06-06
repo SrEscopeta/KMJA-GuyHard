@@ -17,6 +17,10 @@ public class canEnter : MonoBehaviour
             can = false;
             Can.gameObject.GetComponent<Text>().enabled = true;
         }
+        if(other.gameObject.name == "Jonas")
+        {
+            can = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)

@@ -84,13 +84,21 @@ public class Contador : MonoBehaviour
     private void Update()
     {
         casaAsquerosa = GameObject.FindGameObjectWithTag("Casa");
+        EnemigosFinales = GameObject.FindGameObjectWithTag("Final");
+        ChangeYonqui = GameObject.Find("changeYonki");
+        ChangeFinal = GameObject.Find("changeFinal");
+
+        cinematica = GameObject.Find("Cinematica");
+
+        Audio1 = GameObject.Find("Audio1");
+        Audio2 = GameObject.Find("Audio2");
 
         if (countCasa >= 2)
         {
             DestroyImmediate(casaAsquerosa);
         }
 
-        if(countPuerto < 2)
+        if(countPuerto < 3)
         {
             ChangeYonqui.SetActive(true);
             ChangeFinal.SetActive(false);
