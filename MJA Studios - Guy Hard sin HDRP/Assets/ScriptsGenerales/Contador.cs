@@ -114,7 +114,9 @@ public class Contador : MonoBehaviour
             Audio1.SetActive(true);
         }
         else { Audio1.SetActive(true); }
-        if (countPuerto >= 3)
+
+
+        if (countPuerto == 3 || countPuerto >= 3)
         {
             EnemigosFinales.SetActive(true);
             cinematica.SetActive(true);
@@ -123,6 +125,7 @@ public class Contador : MonoBehaviour
             Destroy(ChangeYonqui);
 
             Finales = true;
+            ChangeYonqui.SetActive(false);
 
         }
         else
